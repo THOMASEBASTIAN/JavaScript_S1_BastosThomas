@@ -5,7 +5,7 @@ import * as UserCamper from "./UserCamper.js";
 import * as UserCordinadora from "./Usercordinadora.js";
 
 function iniciarSistema() {
-    menu.default(); 
+     menu.default(); 
 
     let opcion = prompt("Elige tu rol: 1 (cordinadora), 2 (trainer), 3 (camper)");
 
