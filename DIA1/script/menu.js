@@ -1,4 +1,4 @@
-function opcionCordinadora() {
+function opcioncordinadora() {
     console.log("Bienvenido, seleccione qué desea hacer");
     console.log("1. Agregar estudiante");
     console.log("2. Modificar datos estudiante");
@@ -100,4 +100,4 @@ function menu() {
             break;
     }
 }
-export { menu, opcionCordinadora, opcionTrainer };
+export { menu, opcioncordinadora, opcionTrainer };

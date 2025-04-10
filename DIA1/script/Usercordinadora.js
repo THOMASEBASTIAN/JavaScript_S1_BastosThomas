@@ -2,7 +2,7 @@ let estudiantes = [];
 
 function agregarEstudiante() {
     let estudiante = {
-        ide: prompt("Ingresa el ide"),
+        ide: prompt("Ingresa el id"),
         Nombre: prompt("Ingresa el Nombre: "),
         Apellido: prompt("Ingrese el apellido: "),
         Acudiente: prompt("Ingrese el acudiente: "),

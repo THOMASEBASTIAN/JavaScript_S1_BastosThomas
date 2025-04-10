@@ -1,11 +1,9 @@
-let DBFILE = "campers.json"; // Ruta al archivo JSON (sólo referencia)
 
-let estudiantes = []; // Simulamos abrirJSON
+let estudiantes = []; 
 
 function editarNotas() {
     let ruta = [];
     
-    // Simula datos cargados del JSON
     estudiantes.forEach(est => {
         if ([".NET", "Java", "NodeJS"].includes(est.Ruta)) {
             ruta.push(est);
