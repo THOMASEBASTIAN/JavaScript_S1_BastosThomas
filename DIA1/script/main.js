@@ -1,34 +1,23 @@
 // Importaciones de todos los módulos
-import { menu, opcionCordinadora, opcionTrainer } from "./menu.js";
-import { editarNotas } from "./Usertrainer.js";
-import { opcionCamper } from "./UserCamper.js";
-import {
-    agregarEstudiante,
-    verEstudiantes,
-    editarEstudiante,
-    matricularCamper,
-    campersRiesgoAlto,
-    campersInscritos,
-    campersAprobados,
-    verNotas
-} from "./Usercordinadora.js";
-
+import * as menu from "./menu.js";
+import * as UserTrainer from "./Usertrainer.js";
+import * as UserCamper from "./UserCamper.js";
+import * as UserCordinadora from "./Usercordinadora.js";
 
 function iniciarSistema() {
-    menu();
+    menu.default(); 
 
-    
     let opcion = prompt("Elige tu rol: 1 (cordinadora), 2 (trainer), 3 (camper)");
 
     switch (opcion) {
         case "1":
-            opcionCordinadora();
+            UserCordinadora.opcionCordinadora(); 
             break;
         case "2":
-            opcionTrainer();
+            UserTrainer.opcionTrainer();
             break;
         case "3":
-            opcionCamper();
+            UserCamper.opcionCamper();
             break;
         default:
             console.log("Saliendo...");
