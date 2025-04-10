@@ -1,6 +1,36 @@
 
 let estudiantes = []; 
 
+function opcionTrainer() {
+    console.log("Bienvenido, seleccione qué desea hacer");
+    console.log("1. Agregar notas");
+    console.log("2. Mirar rutas");
+    console.log("3. Listas de estudiantes");
+    console.log("4. Horarios de trabajo");
+    console.log("5. Ver estudiantes en riesgo");
+    console.log("6. Módulo reportes");
+    console.log("7. Salida");
+
+    let op = prompt("= ");
+
+    switch (op) {
+        case "1":
+        case "2":
+        case "3":
+        case "4":
+        case "5":
+        case "6":
+            console.log("Funcionalidad en desarrollo...");
+            break;
+        case "7":
+            console.log("Saliendo del menú de trainer...");
+            break;
+        default:
+            console.log("ERROR");
+            break;
+    }
+}
+
 function editarNotas() {
     let ruta = [];
     
@@ -55,4 +85,4 @@ function editarNotas() {
         console.log("No hay estudiantes en rutas definidas.");
     }
 }
-export { editarNotas };
+export { editarNotas,opcionTrainer };

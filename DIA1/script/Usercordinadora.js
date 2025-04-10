@@ -1,5 +1,45 @@
 let estudiantes = [];
 
+function opcioncordinadora() {
+    console.log("Bienvenido, seleccione qué desea hacer");
+    console.log("1. Agregar estudiante");
+    console.log("2. Modificar datos estudiante");
+    console.log("3. Ver estudiantes");
+    console.log("4. Registrar notas");
+    console.log("5. Crear rutas de entrenamiento");
+    console.log("6. Módulo matrículas");
+    console.log("7. Módulo reportes");
+
+    let opc = prompt("-->");
+
+    switch (opc) {
+        case "1":
+            console.log("Módulo reportes aún no implementado");
+            break;
+        case "2":
+            console.log("Módulo reportes aún no implementado");
+            break;
+        case "3":
+            console.log("Módulo reportes aún no implementado");
+            break;
+        case "4":
+            console.log("Módulo reportes aún no implementado");
+            break;
+        case "5":
+            console.log("Módulo reportes aún no implementado");
+            break;
+        case "6":
+            console.log("Módulo reportes aún no implementado");
+            break;
+        case "7":
+            console.log("Módulo reportes aún no implementado");
+            break;
+        default:
+            console.log("ERROR: Opción no válida");
+            break;
+    }
+}
+
 function agregarEstudiante() {
     let estudiante = {
         ide: prompt("Ingresa el id"),
@@ -118,6 +158,7 @@ function verNotas() {
     console.log("  Nota Final: " + curso.notaF);
 }
 export {
+    opcioncordinadora,
     agregarEstudiante,
     verEstudiantes,
     editarEstudiante,
